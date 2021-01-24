@@ -19,7 +19,7 @@ import com.awazpact.entity.Department;
 public class Employee {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int empId;
 	private String name;
 	private String email;
@@ -104,7 +104,7 @@ public class Employee {
 	public AccountDetail getAccountDetail() {
 		return accDetail;
 	}
-	public void setAccountDetil(AccountDetail accDetail) {
+	public void setAccountDetail(AccountDetail accDetail) {
 		this.accDetail = accDetail;
 	}
 	@Override
